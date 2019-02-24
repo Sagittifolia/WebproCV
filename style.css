@@ -1,0 +1,159 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.5;
+  background: #F2F2F2;
+  color: #323232;
+}
+
+img {
+  max-width: 100%;
+}
+
+.gambar-link img {
+  height: 15px;
+  opacity: 1;
+}
+
+a {
+  color: #323232;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.main {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 32px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 20px;
+  padding: 24px 0;
+  border-bottom: 1px solid #003CE1;
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+.Judul {
+  font-weight: bold;
+  font-size: 24px;
+  color: #236FB2;
+}
+
+/*Main Info*/
+
+img.avatar {
+  width: 222px;
+}
+
+.Nama {
+  font-size: 48px;
+  line-height: 1;
+}
+
+.Pekerjaan {
+  font-size: 24px;
+  font-weight: 300;
+  color: #236FB2;
+}
+
+.links {
+  display: flex;
+  margin: 10px 0 20px 0;
+}
+
+.gambar-link {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.gambar-link img {
+  margin-right: 5px;
+}
+
+/*Experience*/
+
+.sub-judul {
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.sub-judul:last-child {
+  border-bottom: none;
+}
+
+.bullet-sub-judul {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.job-company {
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+/*hobby*/
+
+.Hobby-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Hobby-main img {
+  height: 35px;
+  opacity: 1;
+}
+
+/*References*/
+
+.reference {
+  font-size: 18px;
+}
+
+.reference-details {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width : 768px) {
+  section {
+    grid-template-columns: 1fr;
+  }
+
+  .links, .bullet-sub-judul {
+    flex-direction: column;
+  }
+
+  .skills-main {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .Hobby-main {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .Hobby-main img {
+    margin-right: 32px;
+    margin-bottom: 16px;
+  }
+}
